@@ -1,0 +1,24 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  cloud:
+    config:
+      url: "http://localhost:8888"
+    stream:
+      kafka:
+        binder:
+          brokers: "localhost:9092"
+
+server:
+  port: 8085
+
+
+
+premium-email-suffix: gmail.com
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["health", "info", "refresh"]
